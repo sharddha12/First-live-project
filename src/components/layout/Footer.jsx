@@ -64,7 +64,7 @@ const Footer = () => {
                 <div className="border-t border-gray-700 py-8 mt-9"></div>
 
                 {/* Copyright */}
-                <div className="text-left text-xs text-white">
+                <div className="text-left md:text-center text-xs text-white">
                     © {year} Shree Kundule Secondary School™. All Rights Reserved.
                 </div>
             </div>
