@@ -12,29 +12,29 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer className="w-full bg-blue-500 text-primary">
-            <div className="max-w-5xl mx-auto px-4 md:px-5 lg:px-0 py-10">
-                <div className="flex flex-col md:flex-row md:justify-between gap-10">
-
+        <footer className="w-full bg-blue-500 text-white">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
                     {/* Logo Section */}
-                    <div className="flex-1 flex flex-col items-start text-left mb-6 md:mb-0">
-                        <h1 className="text-2xl font-extrabold text-white mb-4">
+                    <div>
+                        <h1 className="text-2xl font-extrabold mb-4 leading-snug">
                             Shree Kundule <br /> Secondary School
                         </h1>
-                        <p className="text-sm text-primary max-w-xs">
+                        <p className="text-base">
                             Building the future, one innovation at a time.
                         </p>
                     </div>
 
                     {/* Useful Links */}
-                    <div className="flex-1 flex flex-col items-start text-left mb-6 md:mb-0">
-                        <h2 className="text-lg font-semibold text-white mb-3">Useful Links</h2>
+                    <div>
+                        <h2 className="text-lg font-semibold mb-4">Useful Links</h2>
                         <ul className="space-y-2">
                             {['About', 'Press', 'Careers', 'Privacy policy', 'Brand assets & guidelines'].map((link, index) => (
                                 <li key={index}>
                                     <Link
                                         to="/"
-                                        className="text-sm hover:text-gray-300 transition-colors duration-300"
+                                        className="text-base hover:text-gray-300 transition-colors duration-300"
                                     >
                                         {link}
                                     </Link>
@@ -44,32 +44,38 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="flex-1 flex flex-col items-start text-left mb-6 md:mb-0">
-                        <h2 className="text-lg font-semibold text-white mb-3">Contact Info</h2>
-                        <ul className="space-y-2 text-sm text-primary">
+                    <div>
+                        <h2 className="text-lg font-semibold mb-4">Contact Info</h2>
+                        <ul className="space-y-2 text-base">
                             <li>
-                                <span className="text-white font-medium">Address:</span> Ba. Na.Pa. -4, Kundule Baglung
+                                <span className="font-medium">Address:</span> Ba. Na.Pa. -4, Kundule, Baglung
                             </li>
                             <li>
-                                <span className="text-white font-medium">Phone:</span> +977-9876543210
+                                <span className="font-medium">Phone:</span> +977-9876543210
                             </li>
                             <li>
-                                <span className="text-white font-medium">Email:</span> info@kunduleschool.edu.np
+                                <span className="font-medium">Email:</span> info@kunduleschool.edu.np
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 {/* Divider */}
-                <div className="border-t border-gray-700 py-8 mt-9"></div>
+                <div className="border-t border-white/30 my-10"></div>
 
-                {/* Copyright */}
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="text-left md:text-center text-xs">
-                        © {year} Shree Kundule Secondary School™. All Rights Reserved.
-                    </div>
-                    <div className="text-left md:text-center text-xs">
-                        Powered By <a target='_blank' href="https://squarelabs.com.np/" rel="noopener noreferrer">Square Labs</a>
+                {/* Bottom Section */}
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                    <div>© {year} Shree Kundule Secondary School™. All Rights Reserved.</div>
+                    <div>
+                        Powered by{' '}
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://squarelabs.com.np/"
+                            className="underline hover:text-gray-300 transition-colors duration-300"
+                        >
+                            Square Labs
+                        </a>
                     </div>
                 </div>
             </div>

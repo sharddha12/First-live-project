@@ -1,4 +1,4 @@
-import { Mail, MapPinned, PhoneCall, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Mail, MapPinned, PhoneCall} from 'lucide-react';
 import React from 'react';
 
 const ContactUs = () => {
@@ -19,7 +19,7 @@ const ContactUs = () => {
                         <div className='space-y-6'>
                             <div className='flex gap-4 items-start'>
                                 <span className='mt-1'>
-                                    <MapPinned className='text-white bg-blue-600 rounded-full p-3 size-12 hover:scale-105 transition-transform duration-300' />
+                                    <MapPinned className='text-white bg-blue-600 rounded-full p-1 size-12 hover:scale-105 transition-transform duration-300' />
                                 </span>
                                 <div>
                                     <h3 className='text-xl font-semibold text-gray-800'>Our Location</h3>
@@ -28,7 +28,7 @@ const ContactUs = () => {
                             </div>
                             <div className='flex gap-4 items-start'>
                                 <span className='mt-1'>
-                                    <Mail className='text-white bg-blue-600 rounded-full p-3 size-12 hover:scale-105 transition-transform duration-300' />
+                                    <Mail className='text-white bg-blue-600 rounded-full p-1 size-12 hover:scale-105 transition-transform duration-300' />
                                 </span>
                                 <div>
                                     <h3 className='text-xl font-semibold text-gray-800'>Email Us</h3>
@@ -39,7 +39,7 @@ const ContactUs = () => {
                             </div>
                             <div className='flex gap-4 items-start'>
                                 <span className='mt-1'>
-                                    <PhoneCall className='text-white bg-blue-600 rounded-full p-3 size-12 hover:scale-105 transition-transform duration-300' />
+                                    <PhoneCall className='text-white bg-blue-600 p-1 rounded-full size-12 hover:scale-105 transition-transform duration-300' />
                                 </span>
                                 <div>
                                     <h3 className='text-xl font-semibold text-gray-800'>Call Us</h3>
