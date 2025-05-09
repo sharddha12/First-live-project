@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row md:justify-between gap-10">
 
                     {/* Logo Section */}
-                    <div className="flex-1 flex flex-col items-start text-left">
+                    <div className="flex-1 flex flex-col items-start text-left mb-6 md:mb-0">
                         <h1 className="text-2xl font-extrabold text-white mb-4">
                             Shree Kundule <br /> Secondary School
                         </h1>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
 
                     {/* Useful Links */}
-                    <div className="flex-1 flex flex-col items-start text-left">
+                    <div className="flex-1 flex flex-col items-start text-left mb-6 md:mb-0">
                         <h2 className="text-lg font-semibold text-white mb-3">Useful Links</h2>
                         <ul className="space-y-2">
                             {['About', 'Press', 'Careers', 'Privacy policy', 'Brand assets & guidelines'].map((link, index) => (
@@ -44,7 +44,7 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="flex-1 flex flex-col items-start text-left">
+                    <div className="flex-1 flex flex-col items-start text-left mb-6 md:mb-0">
                         <h2 className="text-lg font-semibold text-white mb-3">Contact Info</h2>
                         <ul className="space-y-2 text-sm text-primary">
                             <li>
@@ -64,8 +64,13 @@ const Footer = () => {
                 <div className="border-t border-gray-700 py-8 mt-9"></div>
 
                 {/* Copyright */}
-                <div className="text-left md:text-center text-xs text-white">
-                    © {year} Shree Kundule Secondary School™. All Rights Reserved.
+                <div className="flex flex-col md:flex-row justify-between items-center">
+                    <div className="text-left md:text-center text-xs">
+                        © {year} Shree Kundule Secondary School™. All Rights Reserved.
+                    </div>
+                    <div className="text-left md:text-center text-xs">
+                        Powered By <a target='_blank' href="https://squarelabs.com.np/" rel="noopener noreferrer">Square Labs</a>
+                    </div>
                 </div>
             </div>
         </footer>

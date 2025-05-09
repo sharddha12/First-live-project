@@ -1,12 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #FFFFFF;
+  --color-primary: #000000;
 }
 
 
-body {
-  /* color: white; */
-  /* background-color: var(--color-primary); */
-  background-color: black;
-}
