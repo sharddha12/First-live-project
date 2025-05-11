@@ -68,7 +68,7 @@ const OurTeachers = () => {
     const handleToggle = () => {
         const currentShowAll = !showAll;
         setShowAll(currentShowAll);
-        
+
         if (!currentShowAll && teachersRef.current) {
             setTimeout(() => {
                 const offsetTop = teachersRef.current.offsetTop;
@@ -106,61 +106,35 @@ const OurTeachers = () => {
 
                 {!isMobile ? (
                     <div className="space-y-6">
-                        {/* First row - 1 teacher (centered) */}
                         <div className="flex justify-center">
                             <div className="w-full max-w-xs">
                                 {featuredTeachers[0] && <TeacherCard teacher={featuredTeachers[0]} />}
                             </div>
                         </div>
 
-                        {/* Second row - 2 teachers */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-2xl mx-auto">
                             {secondRowTeachers.map((teacher) => (
                                 <TeacherCard key={teacher.name} teacher={teacher} />
                             ))}
                         </div>
 
-                        {/* Third row - 3 teachers */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             {thirdRowTeachers.map((teacher) => (
                                 <TeacherCard key={teacher.name} teacher={teacher} />
                             ))}
                         </div>
 
-                        {/* Fourth row - 3 teachers */}
-                        {(!showAll || teachers.length > 9) && (
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                                {fourthRowTeachers.map((teacher) => (
-                                    <TeacherCard key={teacher.name} teacher={teacher} />
-                                ))}
-                            </div>
-                        )}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                            {fourthRowTeachers.map((teacher) => (
+                                <TeacherCard key={teacher.name} teacher={teacher} />
+                            ))}
+                        </div>
 
-                        {/* Show remaining teachers when expanded */}
                         {showAll && remainingTeachers.length > 0 && (
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                                 {remainingTeachers.map((teacher) => (
                                     <TeacherCard key={teacher.name} teacher={teacher} />
                                 ))}
-                            </div>
-                        )}
-
-                        {teachers.length > 9 && (
-                            <div className="text-center pt-4">
-                                <button
-                                    onClick={handleToggle}
-                                    className="inline-flex items-center gap-2 px-6 py-2 md:px-8 md:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow hover:shadow-md"
-                                >
-                                    {showAll ? (
-                                        <>
-                                            Show Less <ChevronUp size={16} />
-                                        </>
-                                    ) : (
-                                        <>
-                                            Show All {teachers.length} Teachers <ChevronDown size={16} />
-                                        </>
-                                    )}
-                                </button>
                             </div>
                         )}
                     </div>
@@ -172,7 +146,7 @@ const OurTeachers = () => {
                             ))}
                         </div>
 
-                        {teachers.length > 4 && (
+                        {isMobile && teachers.length > 4 && (
                             <div className="text-center mt-8">
                                 <button
                                     onClick={handleToggle}
