@@ -6,7 +6,7 @@ const ContactUs = () => {
         <div className='w-full text-primary px-4 py-16 bg-gray-50'>
             <div className='max-w-5xl mx-auto'>
                 <div className='text-center mb-12'>
-                    <h1 className='text-4xl md:text-5xl font-bold mb-4 text-gray-800'>Get In Touch</h1>
+                    <h1 className='text-4xl md:text-5xl font-bold mb-4 text-blue-500'>Contact Us</h1>
                     <p className='text-xl text-gray-600 max-w-2xl mx-auto'>
                         Shree Kundule Secondery school love to hear from you! Reach out with any questions or inquiries.
                     </p>
