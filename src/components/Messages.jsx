@@ -2,7 +2,7 @@ import React from 'react';
 
 const Messages = () => {
     return (
-        <div className="w-full py-12 px-4 bg-blue-50">
+        <div className="w-full py-12 px-4">
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-10">
                     {/* Text Section */}

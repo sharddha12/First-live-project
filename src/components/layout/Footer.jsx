@@ -65,9 +65,9 @@ const Footer = () => {
 
                 {/* Bottom Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-                    <div>© {year} Shree Kundule Secondary School™. All Rights Reserved.</div>
+                    <div className='text-center md:text-left'>© {year} Shree Kundule Secondary School™. All Rights Reserved.</div>
                     <div>
-                        Powered by{' '}
+                        Design and Developed By {' '}
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
