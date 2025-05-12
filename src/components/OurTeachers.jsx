@@ -150,7 +150,7 @@ const OurTeachers = () => {
                             <div className="text-center mt-8">
                                 <button
                                     onClick={handleToggle}
-                                    className="inline-flex items-center gap-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow hover:shadow-md transition-all duration-300"
+                                    className="inline-flex items-center gap-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md shadow hover:shadow-md transition-all duration-300"
                                 >
                                     {showAll ? (
                                         <>

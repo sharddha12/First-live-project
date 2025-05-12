@@ -35,7 +35,7 @@ const Navbar = () => {
                     ))}
                     <Link
                         to="/contact"
-                        className="text-lg font-medium text-white bg-gradient-to-br from-yellow-400 to-pink-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-lg px-5 py-2.5 transition"
+                        className="text-lg font-medium text-white bg-gradient-to-br from-yellow-400 to-pink-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-md px-5 py-2.5 transition"
                     >
                         Contact Us
                     </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                         ))}
                         <Link
                             to="/contact"
-                            className="w-full text-center text-lg font-medium text-white bg-gradient-to-br from-yellow-400 to-pink-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-lg px-5 py-2.5 transition"
+                            className="w-full text-center text-lg font-medium text-white bg-gradient-to-br from-yellow-400 to-pink-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 rounded-md px-5 py-2.5 transition"
                             onClick={() => setIsOpen(false)}
                         >
                             Contact Us

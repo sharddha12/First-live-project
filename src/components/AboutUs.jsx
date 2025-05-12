@@ -20,16 +20,16 @@ const AboutUs = () => {
                             The school provides quality education with affordable fees and scholarships for deserving and underprivileged students. It also supports activities like ECA, sports, tours, counseling, and more.
                         </p>
                     </div>
-                    <div className="md:w-1/2">
+                    <div className="md:w-1/2 overflow-hidden">
                         <img
                             src="school.jpg"
                             alt="Shree Kundule Secondary School"
-                            className="w-full h-auto rounded shadow"
+                            className="w-full h-auto rounded-md shadow transition-all hover:scale-125 duration-1000 ease-in-out "
                         />
                     </div>
                 </div>
 
-                <div className="bg-white p-6 rounded shadow text-center">
+                <div className="bg-white p-6 -md shadow text-center">
                     <h2 className="text-2xl font-semibold text-blue-600 mb-4">
                         Our Vision & Mission
                     </h2>

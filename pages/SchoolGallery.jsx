@@ -33,7 +33,7 @@ const SchoolGallery = () => {
                     {schoolImages.map((image, index) => (
                         <div
                             key={index}
-                            className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3]"
+                            className="relative overflow-hidden rounded-md shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3]"
                         >
                             <img
                                 src={image.src}

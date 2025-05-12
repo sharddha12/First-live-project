@@ -68,7 +68,7 @@ const ContactUs = () => {
 
                     {/* Right Column - Contact Form */}
                     <div className='lg:w-1/2 w-full'>
-                        <form className='bg-white shadow-xl rounded-xl p-8 space-y-6 border border-gray-100 hover:shadow-2xl transition-shadow duration-300'>
+                        <form className='bg-white shadow-xl rounded-md p-8 space-y-6 border border-gray-100 hover:shadow-2xl transition-shadow duration-300'>
                             <div>
                                 <label htmlFor='name' className='block text-lg font-medium mb-2 text-gray-700'>Full Name</label>
                                 <input
@@ -76,7 +76,7 @@ const ContactUs = () => {
                                     id='name'
                                     name='name'
                                     placeholder='Enter Your Name . . . '
-                                    className='w-full border border-gray-200 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
+                                    className='w-full border border-gray-200 rounded-md px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
                                     required
                                 />
                             </div>
@@ -87,7 +87,7 @@ const ContactUs = () => {
                                     id='email'
                                     name='email'
                                     placeholder='Enter Your Email . . . '
-                                    className='w-full border border-gray-200 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
+                                    className='w-full border border-gray-200 rounded-md px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
                                     required
                                 />
                             </div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                                     id='subject'
                                     name='subject'
                                     placeholder='Enter Your Subject . . .'
-                                    className='w-full border border-gray-200 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
+                                    className='w-full border border-gray-200 rounded-md px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
                                 />
                             </div>
                             <div>
@@ -108,13 +108,13 @@ const ContactUs = () => {
                                     name='message'
                                     rows='5'
                                     placeholder='Enter Your Query . . . '
-                                    className='w-full border border-gray-200 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
+                                    className='w-full border border-gray-200 rounded-md px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300'
                                     required
                                 ></textarea>
                             </div>
                             <button
                                 type='submit'
-                                className='w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 font-semibold text-lg shadow-md hover:shadow-lg'
+                                className='w-full bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-all duration-300 font-semibold text-lg shadow-md hover:shadow-lg'
                             >
                                 Send Message
                                 <span className='ml-2'>→</span>
