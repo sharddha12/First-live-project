@@ -3,7 +3,7 @@ import { Mail, MapPinned, PhoneCall} from 'lucide-react';
 
 const ContactUs = () => {
     return (
-        <div className='w-full text-primary px-4 py-16'>
+        <div className='w-full text-primary py-12 md:py-20 px-4 md:px-5 lg:px-0'>
             <div className='max-w-5xl mx-auto'>
                 <div className='text-center mb-12'>
                     <h1 className='text-4xl md:text-5xl font-bold mb-4 text-blue-500'>Contact Us</h1>
