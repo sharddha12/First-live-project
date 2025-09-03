@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios"; // Import axios
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -11,13 +12,19 @@ const ContactSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // For now, just log the data
-    console.log("Form Data Submitted:", formData);
-    alert("Thank you! Your message has been sent.");
-    // Clear the form
-    setFormData({ name: "", email: "", message: "" });
+    try {
+      // Send POST request to backend
+      const response = await axios.post("http://localhost:3000/contact", formData);
+      console.log("Response:", response.data);
+      alert("Thank you! Your message has been sent.");
+      // Clear the form
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting your message. Please try again.");
+    }
   };
 
   return (

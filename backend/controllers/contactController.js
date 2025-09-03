@@ -1,5 +1,4 @@
-const Contact = require("../models/Contact");
-
+const Contact = require("../models/contact");
 const submitContactForm = async (req, res) => {
   try {
     const { name, email, message } = req.body;
