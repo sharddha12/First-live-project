@@ -23,7 +23,7 @@ const academicRouter = require('./routes/academic');
 const aboutRouter = require('./routes/about');
 const homeRouter = require('./routes/home');
 
-app.use('/gallery', galleryRouter);
+app.use('/gallery',require('./routes/gallery')), 
 app.use('/contact', contactRouter);
 app.use('/alumni', alumniRouter);
 app.use('/academic', academicRouter);
