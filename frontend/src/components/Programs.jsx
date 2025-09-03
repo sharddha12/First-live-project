@@ -9,32 +9,54 @@ const Programs = () => {
         } else {
             setExpandedCards([...expandedCards, index]);
         }
-    };
+    };const programs = [
 
-    const programs = [
-        {
-            title: "Ten Plus Two in Education",
-            description: "Kundule Secondary School, Baglung offers Two years duration 10+2 program under Education stream i.e. Ten Plus Two Education. It is affiliated to the National Examinations Board (NEB) and recognized by the Ministry of Education.",
-            image: "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-            eligibility: [
-                "Candidates must have passed SEE or equivalent examination from any recognized board with a minimum 1.6 GPA.",
-                "Candidates must have passed the entrance examination conducted by the Kundule Secondary School (KSS), Baglung."
-            ],
-            admission: "Eligible and Interested Candidates can contact along with necessary documents for admission to the Ten Plus Two Education program.",
-            scholarship: "Kundule Secondary School provides a scholarship for deserving, hardworking and the deprived students."
-        },
-        {
-            title: "Ten Plus Two in Management",
-            description: "Kundule Secondary School, Baglung offers a Two-year duration Ten Plus Two program under Management stream i.e. Ten Plus Two in Management. It is affiliated to the National Examinations Board (NEB) and recognized by the Ministry of Education, Nepal.",
-            image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-            eligibility: [
-                "Candidates must have passed SEE or equivalent examination from any recognized board with a minimum 1.6 GPA.",
-                "Candidates must have passed the entrance examination conducted by the Kundule Secondary School (KSS), Baglung."
-            ],
-            admission: "Eligible and Interested Candidates directly contact along with essential documents for admission to the Ten Plus Two in Management program.",
-            scholarship: "Kundule Secondary School provides scholarships for hardworking, deserving and deprived students."
-        }
-    ];
+    
+
+    // New program added here
+
+
+    {
+    title: "Advanced 10+2 Education Program",
+    description: "Kundule Secondary School offers an advanced two-year 10+2 education program focusing on academic excellence and skill development in the Education stream. Affiliated with the National Examinations Board (NEB), this program equips students with knowledge and critical thinking skills essential for higher education and career success.",
+    image: "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    eligibility: [
+        "Candidates must have passed SEE or equivalent examination from any recognized board with a minimum 1.6 GPA.",
+        "Candidates must have passed the entrance examination conducted by the Kundule Secondary School (KSS), Baglung."
+    ],
+    admission: "Eligible and Interested Candidates can contact along with necessary documents for admission to the Ten Plus Two Education program.",
+    scholarship: "Kundule Secondary School provides a scholarship for deserving, hardworking and the deprived students."
+}
+,
+    {
+        title: "Comprehensive Schooling: Grades 1 to 12",
+        description: "Our complete academic program from Grade 1 through Grade 12 focuses on holistic development, combining strong fundamentals in science, arts, and humanities with extracurricular activities. Designed to foster creativity, critical thinking, and leadership, this program prepares students for national and international higher education opportunities.",
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        eligibility: [
+            "Students should meet the age and previous grade-level requirements.",
+            "Basic assessment or interview may be conducted for new admissions."
+        ],
+        admission: "Parents or guardians can apply by submitting necessary documents including birth certificate, past academic records, and ID proofs at the school office.",
+        scholarship: "Scholarships and fee concessions are available for talented, underprivileged, and socially marginalized students, based on merit and need."
+    },
+
+
+
+
+
+    {
+        title: "Ten Plus Two in Management",
+        description: "Kundule Secondary School, Baglung offers a Two-year duration Ten Plus Two program under Management stream i.e. Ten Plus Two in Management. It is affiliated to the National Examinations Board (NEB) and recognized by the Ministry of Education, Nepal.",
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        eligibility: [
+            "Candidates must have passed SEE or equivalent examination from any recognized board with a minimum 1.6 GPA.",
+            "Candidates must have passed the entrance examination conducted by the Kundule Secondary School (KSS), Baglung."
+        ],
+        admission: "Eligible and Interested Candidates directly contact along with essential documents for admission to the Ten Plus Two in Management program.",
+        scholarship: "Kundule Secondary School provides scholarships for hardworking, deserving and deprived students."
+    }
+];
+
 
     return (
         <div className='w-full'>

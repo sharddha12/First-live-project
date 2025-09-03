@@ -1,51 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'; 
 
-const HeroSection = () => {
-  return (
-    <section className="w-full bg-white text-primary">
-      {/* Top Banner: Video */}
-      <div className="w-full h-[600px] sm:h-[600px] md:h-[600px] relative overflow-hidden">
-        <video
-          src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Stw4Y28Bippgedql/videoblocks-happy-primary-school-students-opening-school-doors-and-running-away-from-school-building-after-lessons-crowd-of-joyful-preadolescent-schoolkids-leaving-school-at-the-end-of-studies-and-rus__1937b169a10e91d45d74386582af8942__P360.mp4"
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-        />
-      </div>
-
-      {/* Main Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-5 lg:px-0 py-10 flex flex-col md:flex-row items-center gap-8">
-        {/* Left Image */}
-        <div className="w-full md:w-1/2">
-          <img
-            src="https://media.istockphoto.com/id/978336766/photo/public-school-building-exterior-view-of-school-building-with-playground.jpg?s=2048x2048&w=is&k=20&c=a6z4JDLBnvChyLkJVbpDN59qf1NcxCY3fS6b88IWjxQ="
-            alt="School Building"
-            className="rounded-md shadow-md w-full h-auto object-cover"
-          />
-        </div>
-
-        {/* Right Text Content */}
-        <div className="w-full md:w-1/2 text-left">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
-            Welcome to Shree Kundule Secondary School
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify mb-4">
-            Shree Kundule Secondary School is dedicated to nurturing young minds through quality education and values.
-            Our campus fosters a collaborative and inclusive learning environment where students can explore, grow, and achieve excellence.
-            Join us in building a brighter future, one student at a time.
+const HeroSection = () => { 
+  return ( 
+    <section className="w-full h-screen relative overflow-hidden bg-black"> 
+      <video 
+        src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Stw4Y28Bippgedql/videoblocks-happy-primary-school-students-opening-school-doors-and-running-away-from-school-building-after-lessons-crowd-of-joyful-preadolescent-schoolkids-leaving-school-at-the-end-of-studies-and-rus__1937b169a10e91d45d74386582af8942__P360.mp4" 
+        className="w-full h-full object-cover" 
+        autoPlay 
+        muted 
+        loop 
+        playsInline 
+      /> 
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50 flex items-center justify-center"> 
+        <div className="text-center px-6 max-w-4xl">
+          <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-wide drop-shadow-2xl"> 
+            Welcome to<br/>
+            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
+              Shree Kundule
+            </span><br/>
+            <span className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-200">
+              Secondary School
+            </span>
+          </h1>
+          <div className="w-24 h-1 bg-blue-500 mb-6 rounded-full"></div>
+          <p className="text-white/90 text-lg md:text-xl lg:text-2xl font-light tracking-wide drop-shadow-lg max-w-2xl">
+            Nurturing minds, building futures, creating tomorrow's leaders
           </p>
-          <Link
-            to="/about"
-            className="inline-block text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-md text-sm px-5 py-2.5 transition"
-          >
-            Read More About Us
-          </Link>
         </div>
-      </div>
-    </section>
-  );
-};
+      </div> 
+    </section> 
+  ); 
+}; 
 
 export default HeroSection;
