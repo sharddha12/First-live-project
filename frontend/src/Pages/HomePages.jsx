@@ -7,20 +7,24 @@ import Messages from "../components/Messages";
 import OurTeachers from "../components/OurTeachers";
 import AboutUs from "../components/AboutUs";
 import Programs from "../components/Programs";  
-import Gallery from "./Gallery";
+import HomeGallery from "../components/HomeGallery";
+
 
 const HomePage = () => {
     return (
         <>
-            <HeroSection />
-            <AboutUs />
-            <Messages />
-            <OurTeachers />
-            <Programs />
-            <ContactUs />
-<Gallery />
+            <HeroSection/>
+            <AboutUs/>
+            <Messages/>
+                                    <HomeGallery/>
+
+            <OurTeachers/>
+            <Programs/>
+
+            <ContactUs/>
         </>
-    )
-}
+    );
+};
+
 
 export default HomePage;
