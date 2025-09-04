@@ -21,6 +21,9 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 // ✅ Routes
 const contactRouter = require("./routes/contactroutes");
 app.use("/contact", contactRouter);
+const galleryRoutes = require('./routes/gallery');
+app.use('/api/gallery', galleryRoutes);
+
 
 // ✅ Start Server
 const PORT = process.env.PORT || 3000;
