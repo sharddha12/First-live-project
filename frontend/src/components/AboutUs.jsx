@@ -5,7 +5,10 @@ const AboutUs = () => {
     return (
         <>
             {/* About Us Header */}
-            <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
+
+                {/* <section className="l mx-auto py-20 px-6 bg-gradient-to-br from-blue-50 via-white to-indigo-50"> */}
+
+            <div className="w-7xl mx-auto py-20 px-6 flex flex-col lg:flex-row items-center gap-16 mb-20">
                 <div className="flex-1 space-y-8">
                     <div className="space-y-4">
                         <div className="flex items-center gap-4">
@@ -34,8 +37,8 @@ const AboutUs = () => {
 
                     <div className="grid grid-cols-2 gap-6 pt-6">
                         <div className="text-center p-4 bg-white rounded-xl shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
-                            <div className="text-2xl font-bold text-blue-600">10</div>
-                            <div className="text-sm text-gray-600">Grade Levels</div>
+                            <div className="text-2xl font-bold text-blue-600">Grade</div>
+                            <div className="text-sm text-gray-600">1-10</div>
                         </div>
                         <div className="text-center p-4 bg-white rounded-xl shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
                             <div className="text-2xl font-bold text-blue-600">Excellence</div>
@@ -45,7 +48,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="flex-1 relative">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-200 to-indigo-200 rounded-2xl transform rotate-3 opacity-20"></div>
+                    <div className="absolute inset-0  rounded-2xl transform rotate-3 opacity-20"></div>
                     <div className="relative">
                         <img
                             src="https://i.pinimg.com/1200x/db/c4/5c/dbc45c1d643811fbcaf2ed8fcab18d43.jpg"

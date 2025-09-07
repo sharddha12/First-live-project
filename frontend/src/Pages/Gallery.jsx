@@ -8,15 +8,19 @@ const Gallery = () => {
     const [lightboxImage, setLightboxImage] = useState(null);
     const [lightboxIndex, setLightboxIndex] = useState(0);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     // Fetch gallery data from API
     const fetchGalleryData = async () => {
         setLoading(true);
+        setError(null);
         try {
-            const response = await axios.get("http://localhost:3000/api/gallery");
+            const response = await axios.get("http://localhost:3000/api/gallery"); // Use relative URL
             setGalleryData(response.data);
+            console.log("gallery data: ",response.data);
         } catch (error) {
             console.error("Error fetching gallery data:", error);
+            setError("Failed to load gallery images. Please try again later.");
         } finally {
             setLoading(false);
         }
@@ -60,6 +64,23 @@ const Gallery = () => {
             tapeRotation: index % 2 === 0 ? "rotate-12" : "-rotate-12"
         };
     };
+
+    if (error) {
+        return (
+            <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 flex items-center justify-center">
+                <div className="text-center">
+                    <Camera className="w-16 h-16 text-amber-400 mx-auto mb-4" />
+                    <p className="text-gray-600 text-lg font-handwriting">{error}</p>
+                    <button
+                        onClick={fetchGalleryData}
+                        className="mt-4 bg-amber-600 text-white px-4 py-2 rounded-full font-serif"
+                    >
+                        Retry
+                    </button>
+                </div>
+            </div>
+        );
+    }
 
     if (loading) {
         return (
@@ -136,7 +157,7 @@ const Gallery = () => {
                                 >
                                     <div className="relative overflow-hidden">
                                         <img
-                                            src={image.src}
+                                            src={`http://localhost:3000/${image.src}`}
                                             alt={image.title}
                                             className="w-80 h-80 object-cover transition-all duration-300 group-hover:brightness-110"
                                         />
