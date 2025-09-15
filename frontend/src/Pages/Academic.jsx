@@ -1,24 +1,19 @@
-// AcademicSection.js
-import React, { useState } from "react";
+import React from "react";
 
 const AcademicSection = () => {
-  const [showFaculty, setShowFaculty] = useState(false);
-
   const facultyMembers = [
-    { name: "Ram Bahadur", subject: "Mathematics", photo: "FACULTY_PHOTO_URL" },
-    { name: "Sita Sharma", subject: "Science", photo: "FACULTY_PHOTO_URL" },
-    // Add more faculty members as needed
+    { name: "Mr. Ram Bahadur", role: "Principal", photo: "https://i.ibb.co/6N5KxkB/principal.jpg" },
+    { name: "Mrs. Sita Sharma", role: "Director", photo: "https://i.ibb.co/3W2Xr8x/director.jpg" },
   ];
 
   const testimonials = [
     { name: "Anita Sharma", text: "Kundule Secondary helped me achieve my dreams with holistic education." },
     { name: "Ramesh Thapa", text: "The teachers here are amazing and very supportive." },
-    // Add more testimonials
+    { name: "Sujan Rai", text: "A wonderful environment for learning and growth." },
   ];
 
   return (
     <section className="max-w-6xl mx-auto py-12 px-4 space-y-16">
-      
       {/* Header / Value Proposition */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold">Empowering Learning at Kundule Secondary School</h1>
@@ -45,53 +40,28 @@ const AcademicSection = () => {
           <li>Science</li>
           <li>English</li>
           <li>Social Studies</li>
-          <li>Computer Science</li>
-          <li>Arts & Music</li>
+          <li>Computer Studies</li>
         </ul>
       </div>
 
-      {/* Departments */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-semibold">Departments</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="p-4 bg-blue-100 rounded-lg text-center font-medium">Science</div>
-          <div className="p-4 bg-green-100 rounded-lg text-center font-medium">Mathematics</div>
-          <div className="p-4 bg-yellow-100 rounded-lg text-center font-medium">Humanities</div>
-          <div className="p-4 bg-pink-100 rounded-lg text-center font-medium">Arts & Visual Communication</div>
-          <div className="p-4 bg-purple-100 rounded-lg text-center font-medium">Languages</div>
-          <div className="p-4 bg-orange-100 rounded-lg text-center font-medium">Computer Science</div>
+      <div className="space-y-8">
+        <h2 className="text-2xl font-semibold text-center text-blue-700">Meet Our Faculty</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {facultyMembers.map((faculty, i) => (
+            <div key={i} className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center transform transition-transform hover:-translate-y-2 hover:shadow-2xl">
+              <img src={faculty.photo} alt={faculty.name} className="w-32 h-32 rounded-full object-cover mb-4" />
+              <h3 className="text-xl font-semibold text-center">{faculty.name}</h3>
+              <p className="text-gray-600 text-center">{faculty.role}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Faculty Highlight */}
       <div className="space-y-4">
-        <h2 className="text-2xl font-semibold">Our Faculty</h2>
-        <p>Our dedicated teachers foster curiosity, knowledge, and excellence.</p>
-        <button
-          onClick={() => setShowFaculty(!showFaculty)}
-          className="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-        >
-          {showFaculty ? "Hide Faculty" : "View Faculty"}
-        </button>
-        {showFaculty && (
-          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {facultyMembers.map((fac, i) => (
-              <div key={i} className="text-center p-4 bg-gray-100 rounded shadow">
-                <img src={fac.photo} alt={fac.name} className="w-20 h-20 mx-auto rounded-full mb-2" />
-                <h3 className="font-medium">{fac.name}</h3>
-                <p className="text-sm text-gray-600">{fac.subject}</p>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* Student Testimonials */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-semibold">Student Testimonials</h2>
+        <h2 className="text-2xl font-semibold text-center text-blue-700">Student Testimonials</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {testimonials.map((t, i) => (
-            <div key={i} className="p-4 bg-gray-50 rounded-lg shadow">
+            <div key={i} className="p-4 bg-gray-50 rounded-lg shadow hover:bg-gray-100 transition">
               <p className="italic">"{t.text}"</p>
               <p className="mt-2 font-medium text-right">- {t.name}</p>
             </div>
