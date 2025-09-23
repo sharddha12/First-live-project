@@ -26,7 +26,7 @@ const AboutUs = () => {
                         <div className="relative">
                             <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full"></div>
                             <p className="text-lg text-gray-700 leading-relaxed pl-6 font-medium">
-                                Kundule Secondary School is dedicated to delivering exceptional education from Grades 1 to 10.
+                                Kundule Secondary School is dedicated to delivering exceptional education from Grades 1 to 12.
                                 Our mission is to foster responsible, confident, and skilled individuals who make a positive impact on society.
                             </p>
                         </div>
@@ -38,7 +38,7 @@ const AboutUs = () => {
                     <div className="grid grid-cols-2 gap-6 pt-6">
                         <div className="text-center p-4 bg-white rounded-xl shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
                             <div className="text-2xl font-bold text-blue-600">Grade</div>
-                            <div className="text-sm text-gray-600">1-10</div>
+                            <div className="text-sm text-gray-600">1-12</div>
                         </div>
                         <div className="text-center p-4 bg-white rounded-xl shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
                             <div className="text-2xl font-bold text-blue-600">Excellence</div>

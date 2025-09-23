@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 const mockHomeGalleryData = [
   {
     id: 1,
-    src: "https://i.pinimg.com/736x/7a/84/50/7a84500e248d70204807b2dc49b84ed5.jpg",
+    src: "public/assets/image1.jpg",
     title: "Our Beautiful Campus",
     category: "Infrastructure",
     description: "Welcome to Kundule Secondary School - where learning meets excellence in a nurturing environment.",
@@ -16,7 +16,7 @@ const mockHomeGalleryData = [
   },
   {
     id: 2,
-    src: "https://i.pinimg.com/736x/64/02/94/64029400e8ec965f6df6e9e022233f43.jpg",
+    src: "public/assets/image2.jpg",
     title: "Active Student Life",
     category: "Sports",
     description: "Our students excel in sports and physical activities, building character and teamwork skills.",
@@ -27,7 +27,7 @@ const mockHomeGalleryData = [
   },
   {
     id: 3,
-    src: "https://i.pinimg.com/736x/15/c6/e7/15c6e7cd0e8c606c393f8776d38961d7.jpg",
+    src: "public/assets/image3.jpg",
     title: "Modern Learning",
     category: "Academics",
     description: "State-of-the-art facilities with cutting-edge technology for the digital age education.",
@@ -38,7 +38,7 @@ const mockHomeGalleryData = [
   },
   {
     id: 4,
-    src: "https://i.pinimg.com/736x/b0/e7/cf/b0e7cff2e4cfdd077b2fce6b52490838.jpg",
+    src: "public/assets/image4.jpg",
     title: "Knowledge Hub",
     category: "Academics",
     description: "Our comprehensive library provides endless resources for curious minds to explore and grow.",
@@ -49,7 +49,7 @@ const mockHomeGalleryData = [
   },
   {
     id: 5,
-    src: "https://i.pinimg.com/1200x/8c/f2/e2/8cf2e2ddb7c3c91f7ba7952766da647b.jpg",
+    src: "public/assets/image5.jpg",
     title: "Cultural Excellence",
     category: "Events",
     description: "Celebrating creativity and cultural diversity through music, dance, and artistic expression.",
@@ -60,7 +60,7 @@ const mockHomeGalleryData = [
   },
   {
     id: 6,
-    src: "https://i.pinimg.com/736x/7a/84/50/7a84500e248d70204807b2dc49b84ed5.jpg",
+    src: "public/assets/image6.jpg",
     title: "Interactive Learning",
     category: "Academics",
     description: "Dynamic classrooms that foster engagement, creativity, and collaborative learning experiences.",

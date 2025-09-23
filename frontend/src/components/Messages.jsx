@@ -11,12 +11,12 @@ const Messages = () => {
               <div className="md:w-1/2 w-full">
                 <figure className="w-full">
                   <img
-                    src="https://i.pinimg.com/1200x/24/ee/de/24eede9d06b57481c190ac1fda3117b5.jpg"
-                    alt="Director and Principal"
-                    className="w-full h-[350px] md:h-[400px] object-cover rounded-xl shadow-md"
+                    src="assets/Harilalkandel.png"
+                    alt=" Principal"
+                    className="w-full h-[450px] md:h-[750px] object-cover rounded-xl shadow-md"
                   />
                   <figcaption className="text-center text-sm text-gray-500 mt-2">
-                    Shanta Dixit & Milan Dixit – Director and Principal
+                    Hari lal kandel Principal
                   </figcaption>
                 </figure>
               </div>
@@ -24,11 +24,28 @@ const Messages = () => {
               {/* Text */}
               <div className="md:w-1/2 w-full flex flex-col justify-center space-y-6 text-center md:text-left">
                 <h2 className="text-3xl md:text-4xl font-bold text-blue-800">MESSAGE</h2>
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-700">
-                  Message from our Director and Principal
+                <h3 className="text-xl md:text-3xl font-semibold text-gray-700">
+                   Principal
                 </h3>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Khem Acharaya and Milan Kandel formed Kundule Secondary School with the aim of providing quality education to children from all regions.
+                <p className="text-gray-900 text-xl leading-relaxed justify-center items-center">
+Dear Parents, Students, and Well-Wishers,
+
+It is my great honor and pleasure to extend a warm welcome to all of you from Shree Kundule Secondary School.
+
+At our school, we firmly believe that education is the most powerful tool for personal and societal transformation. Our mission is to empower students to become thoughtful, capable, and responsible individuals who are prepared not only for academic challenges but for life beyond the classroom.
+
+Since the foundation of Kundule Secondary School, our focus has been on student-centered learning, where curiosity is nurtured, creativity is encouraged, and every child’s voice is heard. We are proud of our team of committed teachers who work passionately to foster a caring and challenging learning environment for all students.
+
+We aim to provide a balanced education that cultivates intellect, character, and emotional strength. Along with academic rigor, we encourage participation in co-curricular activities that help develop leadership, teamwork, and resilience.
+
+I invite you to become actively involved in your child’s learning journey and be a part of our growing community. Let us work together to shape confident, kind, and capable citizens for tomorrow.
+
+Thank you for being a part of the Kundule Secondary School family.
+
+Warm regards,
+Harilal Kandel
+Principal
+Shree Kundule Secondary School, Baglung
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   View messages from both of them and learn more about the school’s vision and journey.

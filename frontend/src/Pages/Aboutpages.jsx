@@ -24,7 +24,7 @@ const AboutUsSection = () => {
             <div className="relative">
               <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full"></div>
               <p className="text-lg text-gray-700 leading-relaxed pl-6 font-medium">
-                Kundule Secondary School is dedicated to delivering exceptional education from Grades 1 to 10. 
+                Kundule Secondary School is dedicated to delivering exceptional education from Grades 1 to 12. 
                 Our mission is to foster responsible, confident, and skilled individuals who make a positive impact on society.
               </p>
             </div>
@@ -78,10 +78,24 @@ const AboutUsSection = () => {
 
           <div className="relative max-w-4xl mx-auto">
             <div className="absolute top-0 left-0 text-6xl text-blue-200 font-serif leading-none select-none">"</div>
-            <p className="text-gray-700 text-lg md:text-xl leading-relaxed pt-8 px-8 relative z-10">
-              Founded with a vision to provide inclusive and high-quality education, Kundule Secondary School has become a cornerstone of academic excellence in our community. 
-              Since its inception, we have focused on holistic development, character building, and student-centered learning.
-            </p>
+          <div className="mt-10">
+  <p className="text-xl md:text-2xl text-justify text-gray-800 leading-loose">
+    Our journey reflects a strong commitment to
+    <span className="font-semibold text-black"> holistic development</span>,
+    <span className="font-semibold text-black"> character building</span>, and
+    <span className="font-semibold text-black"> student-centered learning</span>. Today, the school proudly offers academic
+    programs from <span className="font-semibold text-black">Grade 1 to Grade 12</span>, including
+    <span className="font-semibold text-black"> +2 level education</span> in Grades 11 and 12. This expansion has made it possible
+    for students to access quality higher education within their own community, eliminating the need to move to distant cities.
+    <br /><br />
+    The growth of <span className="font-semibold text-black">Shree Kundule Secondary School</span> stands as a shining example of
+    <span className="font-semibold text-black"> community collaboration</span> and
+    <span className="font-semibold text-black"> shared vision</span>. Through community-based initiatives, cultural programs,
+    and fundraising efforts, the school has built a solid foundation — not just in terms of infrastructure but also in nurturing
+    future-ready students who contribute positively to society.
+  </p>
+</div>
+
             <div className="absolute bottom-0 right-0 text-6xl text-blue-200 font-serif leading-none select-none transform rotate-180">"</div>
           </div>
 
@@ -100,18 +114,27 @@ const AboutUsSection = () => {
             className="w-full h-auto rounded-xl shadow-lg object-cover"
           />
         </div>
-        <div className="md:w-1/2 space-y-6">
-          <h2 className="text-3xl font-bold text-blue-800">BRIEF HISTORY</h2>
-          <h3 className="text-xl font-semibold text-gray-700">Explore Our Past</h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Kundule Secondary School was founded in [Year] with a commitment to provide quality, inclusive, and holistic education. 
-            The aim was to nurture a generation of students who are analytical and independent thinkers, empowering them socially, emotionally, 
-            and cognitively to build essential skills for life.
-          </p>
-          <button className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
-            Learn More
-          </button>
-        </div>
+       <div className="md:w-1/2 space-y-6">
+  {/* Title */}
+  <h2 className="text-4xl font-bold text-blue-800">BRIEF HISTORY</h2>
+
+  {/* Subtitle */}
+  <h3 className="text-2xl font-semibold text-gray-700">Explore Our Past</h3>
+
+  {/* Paragraph */}
+  <p className="text-gray-700 text-lg md:text-xl leading-relaxed text-justify">
+    Kundule Secondary School was founded in <span className="font-semibold text-black">2015 A.D.</span> with a commitment
+    to provide quality, inclusive, and holistic education. The aim was to nurture a generation of students who are
+    <span className="font-semibold text-black"> analytical and independent thinkers</span>, empowering them socially,
+    emotionally, and cognitively to build essential skills for life.
+  </p>
+
+  {/* Button */}
+  <button className="px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition duration-300 ease-in-out shadow-sm">
+    Learn More
+  </button>
+</div>
+
       </section>
 
       {/* Mission Section */}
@@ -131,7 +154,7 @@ const AboutUsSection = () => {
         <div className="md:w-1/2 w-full">
           <figure className="w-full">
             <img
-              src="https://i.pinimg.com/1200x/24/ee/de/24eede9d06b57481c190ac1fda3117b5.jpg"
+              src="public/assets/both.jpg"
               alt="Director and Principal"
               className="w-full h-[350px] md:h-[400px] object-cover rounded-xl shadow-md"
             />
@@ -145,11 +168,12 @@ const AboutUsSection = () => {
         <div className="md:w-1/2 w-full flex flex-col justify-center space-y-6 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-800">MESSAGE</h2>
           <h3 className="text-xl md:text-2xl font-semibold text-gray-700">
-            Message from our Director and Principal
+            Message from our Chairmain and Principal
           </h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Khem Acharaya and Milan Kandel formed Kundule Secondary School with the aim of providing quality education to children from all regions.
-          </p>
+          <p className="text-gray-600 text-lg leading-relaxed items-center justify-center">
+  Kundule Secondary School was founded by  Harilal Kandel krishna prasad acharaya  and  with a strong commitment to delivering quality education to children from all backgrounds and regions. Since its establishment, the school has grown steadily with the active involvement of the community. Today, under the dynamic leadership of Chairman Harilal Kandel and the academic guidance of Principal Krishna Prasad Acharya, the school continues to strive for excellence. Their dedication, vision, and tireless efforts have played a vital role in shaping the future of hundreds of students, fostering a learning environment that promotes academic success, discipline, and moral values.
+</p>
+
           <p className="text-gray-600 text-lg leading-relaxed">
             View messages from both of them and learn more about the school’s vision and journey.
           </p>

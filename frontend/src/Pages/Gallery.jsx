@@ -9,39 +9,40 @@ const galleryDataArray = [
     description: "Fun moments at the school picnic.",
     category: "Events",
     uploadDate: "2023-03-15",
-    src: "/images/picnic.jpg", // Put images inside public/images folder
+    src: "https://i.pinimg.com/736x/92/a5/df/92a5dfa211720ddacef7fc0684bd3c9c.jpg", // Put images inside public/images folder
   },
   {
     id: 2,
     title: "Science Exhibition",
     description: "Students showcasing their science projects.",
     category: "Events",
-    uploadDate: "2023-05-10",
-    src: "/images/science.jpg",
+    uploadDate: "2025-06-10",
+    src: "https://i.pinimg.com/736x/14/9a/37/149a3714e4568bd3445aa5e4e05c7416.jpg",
   },
   {
     id: 3,
     title: "Sports Day",
     description: "Exciting moments from Sports Day.",
     category: "Sports",
-    uploadDate: "2023-06-20",
-    src: "/images/sports.jpg",
+    uploadDate: "2025-05-20",
+    src: "https://i.pinimg.com/1200x/7b/06/60/7b0660aee4e1a7d6c634ff4cdb7b8e02.jpg",
   },
   {
     id: 4,
     title: "Cultural Program",
     description: "School cultural program memories.",
     category: "Culture",
-    uploadDate: "2023-07-18",
-    src: "/images/culture.jpg",
+    uploadDate: "2024-07-18",
+    src: "public/assets/image1.jpg",
   },
   {
     id: 5,
-    title: "Art Competition",
+    title: "Prizes Distribution",
+    
     description: "Students showing their creativity in art.",
     category: "Art",
     uploadDate: "2023-08-12",
-    src: "/images/art.jpg",
+    src: "public/assets/image2.jpg",
   },
 ];
 

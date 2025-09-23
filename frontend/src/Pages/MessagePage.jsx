@@ -18,49 +18,38 @@ const MessagePage = () => {
 
         {/* Right: Director Message */}
         <div className="md:w-1/2 w-full space-y-4 text-left">
-          <h2 className="text-3xl font-bold text-blue-800">MESSAGE FROM THE DIRECTOR</h2>
-          <h3 className="text-xl font-semibold text-gray-700">Milan Kandel</h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-                   Message from the Principal
-Kundule Secondary School
+          <h2 className="text-3xl font-bold text-blue-800">MESSAGE FROM THE Chairmain</h2>
+          <h3 className="text-xl font-semibold text-gray-700">Krishna Prasad Acharya</h3>
+          <p className="text-gray-900 text-xl leading-relaxed justify-items-center">
 
-Dear Parents, Students, and Well-Wishers,
+Dear Students, Parents, Teachers, and Well-Wishers,
+It is with great pride and heartfelt gratitude that I welcome you all to Shree Kundule Secondary School.As the Chairman, I feel honored to be part of an institution that stands as a beacon of learning, discipline, and development in our community. Our school has always been committed to offering not just education, but a strong foundation for life.
+Education today must go beyond textbooks. It should shape individuals who are not only knowledgeable but also responsible, empathetic, and prepared to face the challenges of the future. At Kundule, we strive to build such individuals with a blend of academic excellence, moral values, and life skills.
+I am deeply proud of our dedicated school management team, passionate teachers, and hardworking students who continuously contribute to the growth and success of this institution. Together, we have made great strides, and with your continued support, we will achieve even greater milestones in the years to come.
 
-It is my great honor and pleasure to extend a warm welcome to all of you from Kundule Secondary School.
+I encourage all parents and guardians to stay actively engaged in your child’s educational journey. Your involvement plays a vital role in shaping their confidence, curiosity, and character.
 
-At our school, we firmly believe that education is the most powerful tool for personal and societal transformation. Our mission is to empower students to become thoughtful, capable, and responsible individuals who are prepared not only for academic challenges but for life beyond the classroom.
+Let us continue to work hand-in-hand for the betterment of our children and our society.
 
-Since the foundation of Kundule Secondary School, our focus has been on student-centered learning, where curiosity is nurtured, creativity is encouraged, and every child’s voice is heard. We are proud of our team of committed teachers who work passionately to foster a caring and challenging learning environment for all students.
-
-We aim to provide a balanced education that cultivates intellect, character, and emotional strength. Along with academic rigor, we encourage participation in co-curricular activities that help develop leadership, teamwork, and resilience.
-
-I invite you to become actively involved in your child’s learning journey and be a part of our growing community. Let us work together to shape confident, kind, and capable citizens for tomorrow.
-
-Thank you for being a part of the Kundule Secondary School family.
+Thank you for trusting and supporting Shree Kundule Secondary School.
 
 Warm regards,
-Milan Dixit
-Principal
+Krishna Prasad Acharya
+Chairman
+Shree Kundule Secondary School, Baglung
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">Thank you,<br/>Shanta Dixit, Director</p>
+          <p className="text-gray-600 text-lg leading-relaxed">Thank you,<br/>Krishna Prasad Acharya, Chairman</p>
         </div>
   {/* Left: Director Photo */}
         <div className="md:w-1/2 w-full flex justify-center md:justify-start">
-          <img
-    src="https://i.pinimg.com/736x/c6/f8/e0/c6f8e003ff1fbe287bfb78a134ab8415.jpg"
-    alt="Khema Acharaya"
-            className="w-full md:w-[350px] h-auto rounded-xl shadow-md object-cover"
-          />
-        </div>
+  <img
+    src="/assets/KrishnaPrasadAcharya.png"
+    alt="Krishna Prasad Acharya"
+    className="w-full md:w-[450px] md:h-[500px] rounded-xl shadow-md object-cover"
+  />
+</div>
+
       </div>
-
-
-
-
-
-
-
-
 
 
       {/* Director Message: image-left, text-right */}
@@ -69,31 +58,27 @@ Principal
         {/* Left: Director Photo */}
         <div className="md:w-1/2 w-full flex justify-center md:justify-start">
           <img
-            src="https://i.pinimg.com/736x/3c/2b/ad/3c2badd0b9688bcb810ef699afc3f7c1.jpg"
-            alt="Milan Kandel "
+    src="/assets/student.jpg" 
+            
+            alt="Milan Kandel"
             className="w-full md:w-[350px] h-auto rounded-xl shadow-md object-cover"
           />
         </div>
 
         {/* Right: Director Message */}
         <div className="md:w-1/2 w-full space-y-4 text-left">
-          <h2 className="text-3xl font-bold text-blue-800">MESSAGE FROM THE DIRECTOR</h2>
-          <h3 className="text-xl font-semibold text-gray-700">Milan Kandel</h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            dear Students, Parents, and Guardians,
+          <h2 className="text-3xl font-bold text-blue-800">MESSAGE FROM THE Alumuni Student</h2>
+          <h3 className="text-2xl font-semibold text-gray-700">Milan Kandel</h3>
+          <p className="text-gray-900 text-xl leading-relaxed justify-center items-center">
+            "Dear students, teachers, guardians, and respected community members,
 
-It is with great pride and enthusiasm that we welcome you to Kundule Secondary School. Our vision has always been to provide inclusive, high-quality education that not only nurtures academic excellence but also encourages ethical values, leadership, and social responsibility.
+It is my great pleasure and honor to serve as the Chairman of Shree Kundule Secondary School. Our goal is not only to provide education, but to empower the next generation with knowledge, values, and skills. We are continuously working to improve our school’s infrastructure, teaching methods, and student support systems.
 
-At Kundule Secondary School, we believe that every child is unique and possesses immense potential. Our dedicated faculty and staff are committed to creating a safe, supportive, and stimulating environment where students can explore their interests, develop critical thinking skills, and grow into responsible, confident individuals.
+I believe that with cooperation, commitment, and a shared vision, we can make Kundule School one of the most outstanding educational institutions in Baglung district. Let us move forward together with unity and dedication for a brighter future of our children.
 
-Education at our school goes beyond textbooks. We emphasize holistic development, offering diverse opportunities in academics, arts, sports, and community service. We aim to instill lifelong learning habits that prepare our students for the challenges and opportunities of the modern world.
-
-We sincerely thank our students, parents, and the community for placing their trust in us. Together, we can foster a generation of compassionate, innovative, and socially responsible citizens who will make a positive impact in society.
-
-With warm regards,
- Milan Kandel
+Thank you!"
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">Thank you,<br/>Shanta Dixit, Director</p>
+          <p className="text-gray-600 text-lg leading-relaxed">Thank you,</p>
         </div>
 
       </div>
