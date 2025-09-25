@@ -4,12 +4,12 @@ import React from "react";
 const facilities = [
   {
     name: "Computer Lab",
-    image: "https://www.durbarhighschool.edu.np/wp-content/uploads/2020/11/dhs39-1536x1024.jpg",
+    image: "https://i.pinimg.com/736x/bb/8d/33/bb8d334c9d7b66663f973547a2c28bfa.jpg",
     description: "Equipped with modern computers and internet access for digital learning.",
   },
   {
     name: "Science Lab",
-    image: "https://www.durbarhighschool.edu.np/wp-content/uploads/2020/11/dhs34-1536x1024.jpg",
+    image: "https://i.pinimg.com/736x/28/88/39/288839abe205c9a157cce3391f076718.jpg",
     description: "Hands-on experiments and practical learning with modern lab equipment.",
   },
   {
@@ -19,7 +19,7 @@ const facilities = [
   },
   {
     name: "Library",
-    image: "https://www.durbarhighschool.edu.np/wp-content/uploads/2020/11/library.jpg",
+    image: "https://i.pinimg.com/736x/6b/d9/09/6bd9094a8087e023240c90f8b0e28f5c.jpg",
     description: "A quiet place for reading and self-study with a wide collection of books.",
   },
   {

@@ -1,122 +1,67 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-
 const Messages = () => {
-    return (
-        <>
-      {/* Message Section */}
-            <section className="max-w-7xl mx-auto py-16 px-6 bg-blue-50 rounded-2xl shadow-lg my-16 flex flex-col md:flex-row items-center gap-12">
-              {/* Image */}
-              <div className="md:w-1/2 w-full">
-                <figure className="w-full">
-                  <img
-                    src="assets/Harilalkandel.png"
-                    alt=" Principal"
-                    className="w-full h-[450px] md:h-[750px] object-cover rounded-xl shadow-md"
-                  />
-                  <figcaption className="text-center text-sm text-gray-500 mt-2">
-                    Hari lal kandel Principal
-                  </figcaption>
-                </figure>
-              </div>
+  return (
+    <section className="max-w-7xl mx-auto py-20 px-6 sm:px-10 lg:px-16 bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-3xl shadow-2xl my-16 flex flex-col lg:flex-row gap-12 lg:gap-20">
       
-              {/* Text */}
-              <div className="md:w-1/2 w-full flex flex-col justify-center space-y-6 text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-bold text-blue-800">MESSAGE</h2>
-                <h3 className="text-xl md:text-3xl font-semibold text-gray-700">
-                   Principal
-                </h3>
-                <p className="text-gray-900 text-xl leading-relaxed justify-center items-center">
-Dear Parents, Students, and Well-Wishers,
+      {/* Image */}
+      <div className="lg:w-1/3 w-full flex justify-center lg:justify-start">
+        <figure className="w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[400px]">
+          <img
+            src="assets/Harilalkandel.png"
+            alt="Principal"
+            className="w-full aspect-[3/4] object-cover rounded-2xl shadow-xl border-4 border-white hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+          <figcaption className="text-center text-sm sm:text-base text-gray-700 mt-4 font-medium italic">
+            Harilal Kandel — Principal
+          </figcaption>
+        </figure>
+      </div>
 
-It is my great honor and pleasure to extend a warm welcome to all of you from Shree Kundule Secondary School.
+      {/* Text */}
+      <div className="lg:w-2/3 w-full flex flex-col justify-start space-y-8">
+        {/* Headings */}
+        <div className="space-y-2">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-800">
+            Message from the Principal
+          </h2>
+          <h3 className="text-xl sm:text-2xl font-semibold text-gray-700">
+            Shree Kundule Secondary School
+          </h3>
+        </div>
 
-At our school, we firmly believe that education is the most powerful tool for personal and societal transformation. Our mission is to empower students to become thoughtful, capable, and responsible individuals who are prepared not only for academic challenges but for life beyond the classroom.
+        {/* Paragraph */}
+        <p className="text-gray-800 text-base sm:text-lg leading-relaxed tracking-wide">
+          Dear Parents, Students, and Well-Wishers,<br /><br />
+          It is my great honor and pleasure to extend a warm welcome to all of you from Shree Kundule Secondary School.<br /><br />
+          At our school, we firmly believe that education is the most powerful tool for personal and societal transformation. Our mission is to empower students to become thoughtful, capable, and responsible individuals who are prepared not only for academic challenges but for life beyond the classroom.<br /><br />
+          Since the foundation of Kundule Secondary School, our focus has been on student-centered learning, where curiosity is nurtured, creativity is encouraged, and every child’s voice is heard. We are proud of our team of committed teachers who work passionately to foster a caring and challenging learning environment for all students.<br /><br />
+          We aim to provide a balanced education that cultivates intellect, character, and emotional strength. Along with academic rigor, we encourage participation in co-curricular activities that help develop leadership, teamwork, and resilience.<br /><br />
+          I invite you to become actively involved in your child’s learning journey and be a part of our growing community. Let us work together to shape confident, kind, and capable citizens for tomorrow.<br /><br />
+          Thank you for being a part of the Kundule Secondary School family.<br /><br />
+          Warm regards,<br />
+          <strong>Harilal Kandel</strong><br />
+          Principal<br />
+          Shree Kundule Secondary School, Baglung
+        </p>
 
-Since the foundation of Kundule Secondary School, our focus has been on student-centered learning, where curiosity is nurtured, creativity is encouraged, and every child’s voice is heard. We are proud of our team of committed teachers who work passionately to foster a caring and challenging learning environment for all students.
+        {/* Extra Info */}
+        <p className="text-gray-600 text-base sm:text-lg">
+          View messages from both of them and learn more about the school’s vision and journey.
+        </p>
 
-We aim to provide a balanced education that cultivates intellect, character, and emotional strength. Along with academic rigor, we encourage participation in co-curricular activities that help develop leadership, teamwork, and resilience.
-
-I invite you to become actively involved in your child’s learning journey and be a part of our growing community. Let us work together to shape confident, kind, and capable citizens for tomorrow.
-
-Thank you for being a part of the Kundule Secondary School family.
-
-Warm regards,
-Harilal Kandel
-Principal
-Shree Kundule Secondary School, Baglung
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  View messages from both of them and learn more about the school’s vision and journey.
-                </p>
-      
-                {/* Read Full Message Button */}
-                <div className="flex justify-center md:justify-start">
-                  <Link to="/message">
-                    <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-blue-800 transition-all duration-300 transform hover:-translate-y-1">
-                      Read Full Message
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </section>
-        </>
-
-   
-        //             {/* Image Section */}
-        //             <div className="relative w-full md:w-1/2 max-w-md mx-auto order-1 md:order-2">
-        //                 {/* Background SVG */}
-        //                 <img
-        //                     src="/svg.svg"
-        //                     alt="Decorative shape"
-        //                     className="w-full"
-        //                 />
-
-        //                 {/* Image */}
-        //                 <div className="absolute top-1/2 left-1/2 w-72 h-72 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-4 border-white shadow-xl">
-        //                     <img
-        //                         src="/man.jpg"
-        //                         alt="Principal"
-        //                         className="w-full h-full object-cover transition-transform duration-1000 ease-in-out hover:scale-125"
-        //                     />
-        //                 </div>
-        //             </div>
-        //         </div>
-        //         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-        //             {/* Text Section */}
-        //             <div className="md:w-1/2 order-1 md:order-2 text-left">
-        //                 <h2 className="text-2xl md:text-4xl font-bold text-blue-500 mb-4">
-        //                     A Message from Our Principal
-        //                 </h2>
-        //                 <p className="text-base md:text-lg text-gray-600 font-normal leading-relaxed">
-        //                     I would like to extend a heartfelt welcome to all students, parents, and staff. Our school is committed to providing a nurturing and academically enriching environment where every student can thrive. The Principal believes in fostering values such as respect, responsibility, and lifelong learning. Together, let us continue to build a strong, supportive community that encourages excellence and personal growth for all.
-        //                 </p>
-        //             </div>
-
-        //             {/* Image Section */}
-        //             <div className="relative w-full md:w-1/2 max-w-md mx-auto order-2 md:order-1">
-        //                 {/* Background SVG */}
-        //                 <img
-        //                     src="/svg.svg"
-        //                     alt="Decorative shape"
-        //                     className="w-full"
-        //                 />
-
-        //                 {/* Image */}
-        //                 <div className="absolute top-1/2 left-1/2 w-72 h-72 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-4 border-white shadow-xl">
-        //                     <img
-        //                         src="/man.jpg"
-        //                         alt="Principal"
-        //                         className="w-full h-full object-cover transition-transform duration-1000 ease-in-out hover:scale-125"
-        //                     />
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
-      
-    );
+        {/* Button */}
+        <div>
+          <Link to="/message">
+            <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-900 transition duration-300 hover:-translate-y-1 hover:scale-105">
+              Read Full Message
+            </button>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Messages;

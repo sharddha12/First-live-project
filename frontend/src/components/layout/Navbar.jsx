@@ -30,15 +30,21 @@ const Navbar = ({ navLinks }) => {
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 md:px-5 lg:px-0 h-[80px] flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex flex-col leading-tight">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide">
-              Shree Kundule
-            </h1>
-            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide">
-              Secondary School
-            </span>
-          </div>
+          {/* Logo with figure */}
+          <div className="flex justify-start items-center pl-2 sm:pl-4 lg:pl-6">
+  <figure className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 -ml-2 sm:-ml-4">
+    <img
+      src="/assets/logo.png"
+      alt="School Logo"
+      className="w-full h-full object-contain"
+    />
+  </figure>
+  
+  <div className="flex flex-col leading-tight">
+    {/* Add your heading or text here if needed */}
+  </div>
+</div>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-lg font-medium">
@@ -99,4 +105,3 @@ const Navbar = ({ navLinks }) => {
 };
 
 export default Navbar;
-
