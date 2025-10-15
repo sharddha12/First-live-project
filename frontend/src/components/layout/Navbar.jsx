@@ -30,21 +30,24 @@ const Navbar = ({ navLinks }) => {
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 md:px-5 lg:px-0 h-[80px] flex items-center justify-between">
-          {/* Logo with figure */}
-          <div className="flex justify-start items-center pl-2 sm:pl-4 lg:pl-6">
-  <figure className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 -ml-2 sm:-ml-4">
-    <img
-      src="/assets/logo.png"
-      alt="School Logo"
-      className="w-full h-full object-contain"
-    />
-  </figure>
-  
-  <div className="flex flex-col leading-tight">
-    {/* Add your heading or text here if needed */}
-  </div>
-</div>
-
+          {/* Logo Section */}
+          <div className="flex items-center space-x-3 pl-2 sm:pl-4 lg:pl-6">
+            <figure className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+              <img
+                src="/assets/logo.png"
+                alt="Kundule Secondary School Logo"
+                className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+              />
+            </figure>
+            <div className="hidden sm:flex flex-col leading-tight">
+              <span className="text-white text-sm sm:text-base font-semibold uppercase tracking-wide">
+                Kundule
+              </span>
+              <span className="text-white text-sm sm:text-base font-light tracking-wider">
+                Secondary School
+              </span>
+            </div>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-lg font-medium">
@@ -98,7 +101,7 @@ const Navbar = ({ navLinks }) => {
         )}
       </nav>
 
-      {/* Spacer div to prevent content overlap */}
+      {/* Spacer to prevent overlap */}
       <div className="h-[80px] md:h-[80px]"></div>
     </>
   );
